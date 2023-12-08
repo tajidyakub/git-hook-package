@@ -1,4 +1,5 @@
 <?php
+
 namespace Tj\GitHook;
 
 interface GitHookInterface
@@ -15,7 +16,6 @@ interface GitHookInterface
 
     /**
      * Get package's configuration.
-     *
      */
     public function config(?string $key = null): mixed;
 }

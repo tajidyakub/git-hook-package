@@ -1,4 +1,5 @@
 <?php
+
 namespace Tj\GitHook;
 
 use Illuminate\Support\Arr;
@@ -15,7 +16,10 @@ class GitHook implements GitHookInterface
     public function config(?string $key = null): mixed
     {
         $c = $this->conf;
-        if ($key) $c = $this->conf[$key];
+        if ($key) {
+            $c = $this->conf[$key];
+        }
+
         return $c;
     }
 
@@ -30,8 +34,7 @@ class GitHook implements GitHookInterface
             'GIT_HOOK_ENABLED' => 0,
             'GIT_HOOK_SECRET' => '',
             'GIT_HOOK_LOG_ENABLED' => 0,
-            'GIT_HOOK_LOG_CHANNEL' => 'stack'
+            'GIT_HOOK_LOG_CHANNEL' => 'stack',
         ];
     }
-
 }

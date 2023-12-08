@@ -1,7 +1,9 @@
 <?php
+
 namespace Tj\GitHook;
 
 use Illuminate\Support\Facades\Facade;
+
 /**
  * @method bool enabled()
  * @method array getRequiredEnvVariables()

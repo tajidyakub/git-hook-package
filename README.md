@@ -3,6 +3,8 @@
 
 The package is made for laravel 10.
 
+Repository https://github.com/tajidyakub/git-hook-package
+
 ## Features
 
 - [ ] Defines `branch` to watch on an incoming update notification.
@@ -15,5 +17,3 @@ The package is made for laravel 10.
 ```
 composer require tj/git-hook
 ```
-
-
