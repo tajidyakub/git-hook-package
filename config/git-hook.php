@@ -37,5 +37,16 @@ return [
     'route' => [
         'name' => 'git-hook.v1',
         'path' => 'api/v1/git-hook'
-    ]
+    ],
+
+    /**
+     * List of repository's branches to watch on an update request.
+     * Command will not be executed if the update is on an unwatched branch.
+     */
+
+    'watches' => [
+        'branches' => [
+            'main'
+        ]
+    ],
 ];
