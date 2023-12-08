@@ -1,0 +1,21 @@
+{
+    "name": "tj/git-hook",
+    "description": "Enables webhook route in your laravel app to receive update notification from github.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tj\\GitHook\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tajid Yakub",
+            "email": "tajid.yakub@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "laravel/pint": "^1.13",
+        "orchestra/testbench": "^8.0"
+    }
+}
